@@ -17,7 +17,7 @@ def customer_payment(file_path):
         # we will only print out the names of customers who overpaid or underpaid
         if expected > customer_payment:
             print(f'{customer_name} underpaid. Expected: ${expected} Paid: ${customer_payment}.')
-        else:
+        elif expected < customer_payment:
             print(f'{customer_name} overpaid. Expected: ${expected} Paid: ${customer_payment}.')
 
 
